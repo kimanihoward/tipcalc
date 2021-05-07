@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tip Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+  <style>
+        body {
+        background-image: url("/pizza.png");
+        background-repeat: no-repeat;
+        background-size: 115%;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: red;
+        margin: 0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 30px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      border-radius: 300%;
+      text-transform: uppercase;
+        }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: red;
+      text-transform: lowercase;
+    }
+    
+    .topnav a.active {
+      background-color: #d39c37;
+      color: green;
+      text-transform: uppercase;
+    }
+  </style>
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Menu</a>
+    <a href="#">Reservation</a>
+  </div>
+
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Tip Calculator</h1>
+            <form id="tip-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                  <input type="number" class="form-control" id="billTotal" placeholder="Total Bill">
+                </div>
+              </div>
+              <div class="form-group tipPersent">
+                <div class="input-group">
+                  <label for="">Tip:</label>
+
+
+                  <input type="range" class="form-control" id="tipInput" value="0">
+                  <span class="input-group-addon" id="tipOutput"></span>
+                </div>
+              </div>
+
+
+
+            </form>
+            <hr>
+
+            <!-- RESULTS -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Tip amount</span>
+                  <input type="number" class="form-control" id="tipAmount" disabled>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Total Bill with Tip</span>
+                  <input type="number" class="form-control" id="totalBillWithTip" disabled>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+<script src="/style.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
